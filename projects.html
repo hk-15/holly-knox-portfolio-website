@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holly Knox</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Holly Knox | Projects</title>
+        <link rel="stylesheet" href="./resources/styles.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
 <body>
     <header role="presentation">
         <h1>Holly Knox</h1>
+        <nav>
+            <ul role="presentation">
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul aria-label="presentation">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    <section role="main">
-        <h2>Projects</h2>
-        <ul>
-            <li>Code First Girls Intro to Web Development Group Project</li>
-                <p>With a partner, built a website to share restaurant and cafe recommendations across London. We used HTML, CSS, JavaScript, and Bootstrap for styling.</p>
-        </ul>
+    <div class="header-alignment" role="presentation"></div>
+    <section class="main projects" role="main">
+        <div class="container" role="presentation">
+            <h2>Projects</h2>
+            <h3>Code First Girls Intro to Web Development Group Project</h3>
+            <p hidden="true" >With a partner, built a website to share restaurant and cafe recommendations across London. We used HTML, CSS, JavaScript, and Bootstrap for styling.</p>
+        </div>
+        <div class="offset-projects" role="presentation"></div>
+        <div class="offset-projects2" role="presentation"></div>
+        <img hidden="true" class="project-img" src="./resources/chips-and-coffee.png" alt="Holly wears glasses and is laughing, looking to the left."/>
     </section>
     <footer>
         <p>© 2025 Holly Knox</p>

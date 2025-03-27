@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holly Knox</title>
+    <title>Holly Knox | About</title>
+    <link rel="stylesheet" href="./resources/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aab34f715d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header role="presentation">
         <h1>Holly Knox</h1>
-    </header>
     <nav>
-        <ul aria-label="presentation">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+        <ul role="presentation">
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section role="main">
-        <h2>About</h2>
-        <p>Holly Knox is a trainee software developer based in London. They are taking part in TechSwitch&#8217;s three-month Software Development Bootcamp. They have a BA in English and an MA in Medieval and Renaissance Studies, and spent four years working in editorial departments in the publishing industry before making the switch to tech.</p>
-        <p>In their spare time, Holly enjoys taking on challenging knitting projects and going to the cinema. They live in London.</p>
-        <img src="" alt=""/>
+    </header>
+    <div class="header-alignment" role="presentation"></div>
+    <section class="main" role="main">
+        <div class="container" role="presentation">
+            <h2>About</h2>
+            <p>Holly Knox is a trainee software developer based in London. They are taking part in TechSwitch&#8217;s three-month Software Development bootcamp from April to July. They have a BA in English and an MA in Medieval and Renaissance Studies, and spent four years working in editorial departments in the publishing industry before making the switch to tech.</p>
+            <p>In their spare time, Holly enjoys taking on challenging knitting projects and going to the cinema. They live in London.</p>
+            <h3>Skills</h3>
+            <div class="skills" role="presentation">
+                <i class="fa fa-html5 fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-css3" aria-hidden="true"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-git" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="offset-about" role="presentation"></div>
+        <img class="portrait" src="./resources/holly.jpeg" alt="Holly wears glasses and is laughing, looking to the left."/>
     </section>
     <footer>
         <p>© 2025 Holly Knox</p>
