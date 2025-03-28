@@ -13,6 +13,11 @@ body {
     flex: 1;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Header and nav */
 header {
     display: flex;
@@ -42,11 +47,6 @@ nav ul li {
     z-index: 2;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
 nav a:hover {
     font-weight: bold;
 }
@@ -57,6 +57,11 @@ nav a:hover {
     height: 13px;
     z-index: 0;
 }
+
+.current {
+    font-weight: 700;
+}
+
 /* Main sections*/
 .main {
     display: flex;
@@ -112,6 +117,14 @@ nav a:hover {
 /* Projects */
 .projects h3 {
     font-size: 1.25rem;
+}
+
+#heading-highlight1 {
+    background-color: #DBFF00;
+    height: 1em;
+    position: absolute;
+    z-index: -1;
+    margin-top: -2em;
 }
 
 .project-img {

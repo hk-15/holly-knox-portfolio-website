@@ -8,14 +8,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <script src="./scripts.js" defer></script>
     </head>
 <body>
     <header role="presentation">
-        <h1>Holly Knox</h1>
+        <h1><a href="./index.html">Holly Knox</a></h1>
         <nav>
             <ul role="presentation">
                 <li><a href="./index.html">About</a></li>
-                <li><a href="./projects.html">Projects</a></li>
+                <li class="current"><a href="./projects.html">Projects</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -24,8 +25,9 @@
     <section class="main projects" role="main">
         <div class="container" role="presentation">
             <h2>Projects</h2>
-            <h3>Code First Girls Intro to Web Development Group Project</h3>
-            <p hidden="true" >With a partner, built a website to share restaurant and cafe recommendations across London. We used HTML, CSS, JavaScript, and Bootstrap for styling.</p>
+            <h3 id="project1">Code First Girls Intro to Web Development Group Project</h3>
+            <div id="heading-highlight1" role="presentation"></div>
+            <p id="description1" hidden="true">With a partner, I built a website to share restaurant and cafe recommendations across London. We used HTML, CSS and JavaScript, and Bootstrap for styling.</p>
         </div>
         <div class="offset-projects" role="presentation"></div>
         <div class="offset-projects2" role="presentation"></div>
