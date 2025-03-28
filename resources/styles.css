@@ -89,7 +89,7 @@ nav a:hover {
 
 /* About */
 .portrait {
-    width: 25%;
+    width: 25rem;
     height: auto;
     margin-left: 20px;
     position: absolute;
@@ -99,11 +99,11 @@ nav a:hover {
 
 .offset-about {
     background-color: #DBFF00;
-    width: 23rem;
-    height: 23rem;
+    width: 25rem;
+    height: 25rem;
     position: absolute;
-    right: 12rem;
-    margin-top: 1rem;
+    right: 14rem;
+    margin-top: 4rem;
 }
 
 .skills {
@@ -119,36 +119,59 @@ nav a:hover {
     font-size: 1.25rem;
 }
 
+.projects h3:hover {
+    cursor: pointer;
+}
+
 #heading-highlight1 {
     background-color: #DBFF00;
     height: 1em;
+    width: 30em;
     position: absolute;
     z-index: -1;
     margin-top: -2em;
+    display: none;
 }
 
-.project-img {
-    width: 25%;
+#description1 {
+    display: none;
+}
+
+#project-img1 {
+    width: 23%;
     height: auto;
     margin-left: 20px;
-    position: absolute;
-    right: 10rem;
     z-index: 2;
+    position: absolute;
+    margin-top: 1rem;
+    right: 11rem;
+    display: none;
+}
+
+#project-img2 {
+    width: 10%;
+    position: absolute;
+    margin-top: 8rem;
+    right: 29rem;
+    display: none;
+    z-index: 2;
+    border: solid 1px #DBFF00;
+    border-radius: .5rem;
 }
 
 .offset-projects {
     background-color: #DBFF00;
-    width: 23rem;
-    height: 23rem;
+    width: 25rem;
+    height: 25rem;
     position: absolute;
-    right: 12rem;
-    margin-top: 1rem;
+    right: 14rem;
+    margin-top: 4rem;
 }
 
 .offset-projects2 {
     background-color: #DBFF00;
-    width: 22.75rem;
-    height: 22.75rem;
+    width: 25rem;
+    height: 25rem;
     position: absolute;
     right: 10rem;
 }
@@ -160,12 +183,8 @@ nav a:hover {
     margin-top: 1rem;;
 }
 
-.contacts a {
-    color: black;
-}
-
-.contacts a:hover {
-    color: #DBFF00;
+.main a:hover {
+    background-color: #DBFF00;
 }
 
 /* Footer */
