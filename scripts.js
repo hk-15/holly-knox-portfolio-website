@@ -19,7 +19,6 @@ function showDescription(_onclick) {
         description1.style.display = "block";
         img1.style.display = "block";
         img2.style.display = "block";
-
     } else {
         description1.style.display = "none";
         img1.style.display = "none";
@@ -27,10 +26,6 @@ function showDescription(_onclick) {
 
     }
 };
-
-function changeColor(_onclick) {
-    project1.style.color = 'red';
-}
 
 /* DOM events */
 project1.onclick = showDescription;

@@ -11,11 +11,55 @@ body {
 .main {
     padding: 3rem 10rem 0;
     flex: 1;
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.main h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.main h3 {
+    font-size: 1.75rem;
+    margin-top: 3rem;
+}
+
+.container {
+    padding-right: 3rem;
+    width: 50%;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (max-width: 1340px) {
+    .main {
+        padding: 3rem 6rem 0;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .main h2 {
+        font-size: 1.75rem;
+    }
+
+    .main h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .main {
+        padding: 1.75rem 3rem 0;
+    }
+
+    .container {
+        padding-right: 0;
+        width: 55%;
+    }
 }
 
 /* Header and nav */
@@ -62,29 +106,39 @@ nav a:hover {
     font-weight: 700;
 }
 
-/* Main sections*/
-.main {
-    display: flex;
-    margin-top: 1.5rem;
+@media only screen and (max-width: 1340px) {
+    header {
+        padding: 6rem 6rem 0;
+    }
 }
 
-.main h2 {
-    font-size: 2.5rem;
-    margin-top: 0;
+@media only screen and (max-width: 1035px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+    .header-alignment {
+        margin-top: -10px;
+    }
 }
 
-.main h3 {
-    font-size: 1.75rem;
-    margin-top: 3rem;
-}
+@media only screen and (max-width: 910px) {
+    header {
+        padding: 4rem 3rem 0;
+    }
 
-.container {
-    padding-right: 3rem;
-    width: 50%;
-}
+    nav ul li {
+        padding: 0 0 0 2rem;
+        font-size: 1.25rem;
+    }
 
-.img-container {
-    width: 50%;
+    header h1 {
+        font-size: 2.75rem;
+    }
 }
 
 /* About */
@@ -114,6 +168,49 @@ nav a:hover {
     padding-right: 1rem;
 }
 
+@media only screen and (max-width: 1340px) {
+    .portrait {
+        width: 22rem;
+        right: 6rem;
+    }
+
+    .offset-about {
+        width: 22rem;
+        height: 22rem;
+        right: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .portrait {
+        width: 20rem;
+    }
+
+    .offset-about {
+        width: 20rem;
+        height: 20rem;
+        right: 8rem;
+        margin-top: 2rem;
+    }
+
+    .skills {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .portrait {
+        width: 15rem;
+        right: 3rem;
+    }
+
+    .offset-about {
+        width: 15rem;
+        height: 15rem;
+        right: 6rem;
+    }
+}
+
 /* Projects */
 .projects h3 {
     font-size: 1.25rem;
@@ -130,11 +227,6 @@ nav a:hover {
     position: absolute;
     z-index: -1;
     margin-top: -2em;
-    display: none;
-}
-
-#description1 {
-    display: none;
 }
 
 #project-img1 {
@@ -145,7 +237,6 @@ nav a:hover {
     position: absolute;
     margin-top: 1rem;
     right: 11rem;
-    display: none;
 }
 
 #project-img2 {
@@ -153,7 +244,6 @@ nav a:hover {
     position: absolute;
     margin-top: 8rem;
     right: 29rem;
-    display: none;
     z-index: 2;
     border: solid 1px #DBFF00;
     border-radius: .5rem;
@@ -174,6 +264,74 @@ nav a:hover {
     height: 25rem;
     position: absolute;
     right: 10rem;
+}
+
+@media only screen and (max-width: 1340px) {
+    .offset-projects {
+        right: 10rem;
+    }
+
+    .offset-projects2 {
+        right: 6rem;
+    }
+
+    #project-img1 {
+        right: 7rem;
+        width: 27%;
+    }
+
+    #project-img2 {
+        right: 25rem;
+        width: 12%;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .offset-projects {
+        width: 20rem;
+        height: 20rem;
+        right: 8rem;
+        margin-top: 2rem;
+    }
+
+    .offset-projects2 {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    #heading-highlight1 {
+        width: 20rem;
+        margin-top: -3.25rem;
+    }
+
+    #project-img2 {
+        right: 20rem;
+        width: 10%;
+        margin-top: 7rem;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .offset-projects {
+        width: 17rem;
+        height: 17rem;
+        right: 6rem;
+    }
+
+    .offset-projects2 {
+        width: 17rem;
+        height: 17rem;
+        right: 3rem;
+    }
+
+    #project-img2 {
+        right: 16rem;
+        margin-top: 6rem;
+    }
+
+    #project-img1 {
+        right: 4rem;
+    }
 }
 
 /* Contact */
