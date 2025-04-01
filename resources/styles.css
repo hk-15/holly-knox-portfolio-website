@@ -35,33 +35,6 @@ a {
     color: black;
 }
 
-@media only screen and (max-width: 1340px) {
-    .main {
-        padding: 3rem 6rem 0;
-    }
-}
-
-@media only screen and (max-width: 1035px) {
-    .main h2 {
-        font-size: 1.75rem;
-    }
-
-    .main h3 {
-        font-size: 1.25rem;
-    }
-}
-
-@media only screen and (max-width: 910px) {
-    .main {
-        padding: 1.75rem 3rem 0;
-    }
-
-    .container {
-        padding-right: 0;
-        width: 55%;
-    }
-}
-
 /* Header and nav */
 header {
     display: flex;
@@ -106,41 +79,6 @@ nav a:hover {
     font-weight: 700;
 }
 
-@media only screen and (max-width: 1340px) {
-    header {
-        padding: 6rem 6rem 0;
-    }
-}
-
-@media only screen and (max-width: 1035px) {
-    header h1 {
-        font-size: 3rem;
-    }
-
-    nav ul li {
-        font-size: 1.2rem;
-    }
-
-    .header-alignment {
-        margin-top: -10px;
-    }
-}
-
-@media only screen and (max-width: 910px) {
-    header {
-        padding: 4rem 3rem 0;
-    }
-
-    nav ul li {
-        padding: 0 0 0 2rem;
-        font-size: 1.25rem;
-    }
-
-    header h1 {
-        font-size: 2.75rem;
-    }
-}
-
 /* About */
 .portrait {
     width: 25rem;
@@ -158,6 +96,7 @@ nav a:hover {
     position: absolute;
     right: 14rem;
     margin-top: 4rem;
+    z-index: -1;
 }
 
 .skills {
@@ -166,49 +105,6 @@ nav a:hover {
 
 .skills i {
     padding-right: 1rem;
-}
-
-@media only screen and (max-width: 1340px) {
-    .portrait {
-        width: 22rem;
-        right: 6rem;
-    }
-
-    .offset-about {
-        width: 22rem;
-        height: 22rem;
-        right: 10rem;
-    }
-}
-
-@media only screen and (max-width: 1035px) {
-    .portrait {
-        width: 20rem;
-    }
-
-    .offset-about {
-        width: 20rem;
-        height: 20rem;
-        right: 8rem;
-        margin-top: 2rem;
-    }
-
-    .skills {
-        font-size: 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 910px) {
-    .portrait {
-        width: 15rem;
-        right: 3rem;
-    }
-
-    .offset-about {
-        width: 15rem;
-        height: 15rem;
-        right: 6rem;
-    }
 }
 
 /* Projects */
@@ -230,7 +126,7 @@ nav a:hover {
 }
 
 #project-img1 {
-    width: 23%;
+    width: 23rem;
     height: auto;
     margin-left: 20px;
     z-index: 2;
@@ -240,7 +136,7 @@ nav a:hover {
 }
 
 #project-img2 {
-    width: 10%;
+    width: 9rem;
     position: absolute;
     margin-top: 8rem;
     right: 29rem;
@@ -266,74 +162,6 @@ nav a:hover {
     right: 10rem;
 }
 
-@media only screen and (max-width: 1340px) {
-    .offset-projects {
-        right: 10rem;
-    }
-
-    .offset-projects2 {
-        right: 6rem;
-    }
-
-    #project-img1 {
-        right: 7rem;
-        width: 27%;
-    }
-
-    #project-img2 {
-        right: 25rem;
-        width: 12%;
-    }
-}
-
-@media only screen and (max-width: 1035px) {
-    .offset-projects {
-        width: 20rem;
-        height: 20rem;
-        right: 8rem;
-        margin-top: 2rem;
-    }
-
-    .offset-projects2 {
-        width: 20rem;
-        height: 20rem;
-    }
-
-    #heading-highlight1 {
-        width: 20rem;
-        margin-top: -3.25rem;
-    }
-
-    #project-img2 {
-        right: 20rem;
-        width: 10%;
-        margin-top: 7rem;
-    }
-}
-
-@media only screen and (max-width: 910px) {
-    .offset-projects {
-        width: 17rem;
-        height: 17rem;
-        right: 6rem;
-    }
-
-    .offset-projects2 {
-        width: 17rem;
-        height: 17rem;
-        right: 3rem;
-    }
-
-    #project-img2 {
-        right: 16rem;
-        margin-top: 6rem;
-    }
-
-    #project-img1 {
-        right: 4rem;
-    }
-}
-
 /* Contact */
 .contacts i {
     padding-right: 4rem;
@@ -348,4 +176,401 @@ nav a:hover {
 /* Footer */
 footer {
     text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive design adjustments */
+
+@media only screen and (max-width: 1340px) {
+    .main {
+        padding: 3rem 6rem 0;
+    }
+
+    header {
+        padding: 6rem 6rem 0;
+    }
+
+    .portrait {
+        width: 22rem;
+        right: 6rem;
+    }
+
+    .offset-about {
+        width: 22rem;
+        height: 22rem;
+        right: 10rem;
+    }
+
+    .offset-projects {
+        right: 10rem;
+    }
+
+    .offset-projects2 {
+        right: 6rem;
+    }
+
+    #project-img1 {
+        right: 7rem;
+    }
+
+    #project-img2 {
+        right: 25rem;
+    }
+}
+
+@media only screen and (max-width: 1214px) {
+    #heading-highlight1 {
+        width: 24rem;
+        margin-top: -3.25rem;
+    }
+
+    .projects .container {
+        width: 45%;
+
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+    .header-alignment {
+        margin-top: -10px;
+    }
+
+    .main h2 {
+        font-size: 1.75rem;
+    }
+
+    .main h3 {
+        font-size: 1.25rem;
+    }
+
+    .portrait {
+        width: 20rem;
+    }
+
+    .offset-about {
+        width: 20rem;
+        height: 20rem;
+        right: 8rem;
+        margin-top: 2rem;
+    }
+
+    .skills {
+        font-size: 1.5rem;
+    }
+
+    .offset-projects {
+        width: 20rem;
+        height: 20rem;
+        right: 8rem;
+        margin-top: 2rem;
+    }
+
+    .offset-projects2 {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    #project-img1 {
+        width: 18rem;
+    }
+
+    #project-img2 {
+        right: 20rem;
+        width: 7rem;
+        margin-top: 6.5rem;
+    }
+
+    #heading-highlight1 {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .main {
+        padding: 1.75rem 3rem 0;
+    }
+
+    .container {
+        padding-right: 0;
+        width: 55%;
+    }
+
+    header {
+        padding: 4rem 3rem 0;
+    }
+
+    nav ul li {
+        padding: 0 0 0 2rem;
+        font-size: 1.25rem;
+    }
+
+    header h1 {
+        font-size: 2.75rem;
+    }
+
+    .portrait {
+        width: 15rem;
+        right: 3rem;
+    }
+
+    .offset-about {
+        width: 15rem;
+        height: 15rem;
+        right: 6rem;
+    }
+
+    .offset-projects {
+        width: 17rem;
+        height: 17rem;
+        right: 6rem;
+    }
+
+    .offset-projects2 {
+        width: 17rem;
+        height: 17rem;
+        right: 3rem;
+    }
+
+    #project-img2 {
+        right: 16rem;
+        margin-top: 5rem;
+        width: 6rem;
+    }
+
+    #project-img1 {
+        right: 4rem;
+        width: 15.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 1rem 1rem 0;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .projects h3 {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 2rem 1rem 0;
+    }
+
+    nav ul li {
+        padding: 0 0 0 1rem;
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .header-alignment {
+        margin-top: -7px;
+    }
+
+    .portrait {
+        width: 15rem;
+        right: 1rem;
+    }
+
+    .offset-about {
+        right: 2.25rem;
+    }
+
+    .offset-projects {
+        width: 18rem;
+        height: 18rem;
+        right: 2.25rem;
+    }
+
+    .offset-projects2 {
+        width: 18rem;
+        height: 18rem;
+        right: 1rem;
+    }
+
+    #heading-highlight1 {
+        width: 12rem;
+        margin-top: -2.75rem;
+    }
+
+    #project-img2 {
+        right: 13.5rem;
+        margin-top: 6rem;
+        width: 6rem;
+    }
+
+    #project-img1 {
+        right: 2rem;
+        width: 15.5rem;
+    }
+
+    .contact .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .main {
+        display: block;
+    }
+
+    .main .container {
+        width: 100%;
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .projects .container {
+        padding-top: 0;
+    }
+
+    .portrait {
+        position: static;
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    .offset-about {
+        right: 20%;
+        margin-top: 2rem;
+        width: 50%;
+        height: 16rem;
+    }
+
+    #heading-highlight1 {
+        width: 20rem;
+    }
+
+    .offset-projects {
+        left: 2%;
+    }
+
+    .offset-projects2 {
+        left: 10%;
+    }
+
+    #project-img1 {
+        left: 10%;
+    }
+
+    #project-img2 {
+        left: 4%;
+    }
+
+    .contacts {
+        text-align: center;
+    }
+
+    .contacts i {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .offset-about {
+        height: 13rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        align-items: last baseline;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        text-align: right;
+        display: block;
+    }
+
+    nav ul li {
+        padding-top: .75rem;
+    }
+    .header-alignment {
+        margin-top: -.6rem;
+    }
+    
+    .offset-about {
+        height: 11rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-alignment {
+        margin-top: -.5rem;
+    }
+    
+    nav ul li {
+        font-size: 1rem;
+    }
+    .portrait {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .offset-about {
+        width: 60%;
+        right: 15%;
+    }
+
+    #heading-highlight1 {
+        width: 12rem;
+    }
+
+    .contacts i {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .offset-about {
+        height: 9.5rem;
+    }
+
+    .offset-projects {
+        width: 17rem;
+        height: 17rem;
+        margin-top: 4rem;
+    }
+
+    .offset-projects2 {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .contacts i {
+        padding: 0 1rem;
+    }
+
+    #project-img2 {
+        right: 12.75rem;
+        margin-top: 7rem;
+    }
 }
